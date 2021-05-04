@@ -8,7 +8,7 @@ export const listingSlice = createSlice({
     filteredItems: [],
     companies: [],
     activePage: 1,
-    sorting: null,
+    sorting: 'Price low to high',
     brandsFilter: [],
     tagsFilter: [],
     typeFilter: null,
