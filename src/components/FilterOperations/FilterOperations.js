@@ -99,7 +99,7 @@ export const FilterOperations = () => {
       dispatch(setFilteredItems(newFilteredProducts));
       dispatch(setActivePage(1));
     }
-  }, [sorting, brandsFilter, tagsFilter, typeFilter]);
+  }, [sorting, brandsFilter, tagsFilter, typeFilter, items]);
 
   return null;
 }
