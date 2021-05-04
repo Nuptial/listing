@@ -16,8 +16,8 @@ export const Listing = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    let reqUrlCompanies = '';
-    let reqUrlItems = '';
+    let reqUrlCompanies = null;
+    let reqUrlItems = null;
 
     if (process.env.NODE_ENV === 'development') {
       reqUrlCompanies = 'http://localhost:3004/companies';
