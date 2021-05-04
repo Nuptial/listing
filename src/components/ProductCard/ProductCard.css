@@ -1,0 +1,43 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: 124px;
+  height: 225px;
+}
+
+.product-card .product-image-wrapper {
+  width: 124px;
+  height: 124px;
+  background: #FEFEFE;
+  border: 1.17666px solid #F3F0FE;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.product-card .product-price {
+  color: #1EA4CE;
+  font-weight: 700;
+}
+
+.product-card .product-name {
+  font-weight: 600;
+  color: #191919;
+  margin-bottom: 8px;
+  height: 40px;
+  margin-top: 5px;
+}
+
+.product-card .product-add-button {
+  width: 100%;
+  color: white;
+  background: #1EA4CE;
+  border-radius: 2px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

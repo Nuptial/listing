@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'normalize.css';
 import './index.css';
-import App from './App';
+import 'font-awesome/css/font-awesome.min.css'
+import Listing from './pages/Listing/Listing';
 import reportWebVitals from './reportWebVitals';
+import store from './store/configure-store'
+import { Provider } from 'react-redux'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      <Listing />
+    </React.StrictMode>
+  </Provider>,
   document.getElementById('root')
 );
 

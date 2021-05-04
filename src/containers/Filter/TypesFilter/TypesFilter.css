@@ -1,0 +1,23 @@
+.item-type-container {
+  display: flex;
+  margin-top: 16px;
+}
+
+.item-type-container .item-type {
+  width: 61px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  border-radius: 2px;
+  color: #1EA4CE;
+  cursor: pointer;
+  background: #F2F0FD;
+  font-weight: 600;
+}
+
+.item-type-container .item-type.active {
+  color: white;
+  background: #1EA4CE;
+}

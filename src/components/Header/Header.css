@@ -1,0 +1,19 @@
+.header-wrapper {
+  height: 76.64px;
+  background: #1EA4CE;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.header-wrapper .logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.header-wrapper .right-items-wrapper {
+  margin-left: auto;
+  margin-right: 104px;
+}

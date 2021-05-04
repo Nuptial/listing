@@ -1,0 +1,50 @@
+.sorting-wrapper .title {
+  font-weight: 600;
+  color: #697488;
+}
+
+.sorting-wrapper .items-wrapper {
+  width: 296px;
+  background: white;
+  padding: 24px;
+  border-radius: 2px;
+  box-shadow: 0px 6px 24px rgba(93, 62, 188, 0.04);
+  margin-top: 12px;
+}
+
+.sorting-wrapper .items-wrapper .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.sorting-wrapper .items-wrapper .item:last-child {
+  margin-bottom: 0;
+}
+
+.sorting-wrapper .items-wrapper .item .checkmark {
+  background: #FFFFFF;
+  border: 2px solid #DFDEE2;
+  box-sizing: border-box;
+  border-radius: 17.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+}
+
+.sorting-wrapper .items-wrapper .item .checkmark i {
+  display: none;
+  color: #1EA4CE;
+}
+
+.sorting-wrapper .items-wrapper .item.checked .checkmark {
+  border: 2px solid #1EA4CE;
+}
+
+.sorting-wrapper .items-wrapper .item.checked .checkmark i {
+  display: block;
+}

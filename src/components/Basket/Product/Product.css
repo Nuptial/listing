@@ -1,0 +1,53 @@
+.product-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 16.35px;
+}
+
+.product-wrapper .name {
+  font-weight: 400;
+  margin-bottom: 4.09px;
+  color: #191919;
+  font-weight: 400;
+  max-width: 125px;
+}
+
+.product-wrapper .price {
+  font-weight: 600;
+  color: #1EA4CE;
+}
+
+.product-wrapper .quantity-wrapper {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.product-wrapper .quantity-wrapper i {
+  width: 10px;
+  color: #1EA4CE;
+}
+
+.product-wrapper .quantity-wrapper .count {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  width: 32px;
+  height: 32.7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background:#1EA4CE;
+  margin: 0 12px;
+}
+
+.product-wrapper .divider {
+  width: 100%;
+  height: 1.02px;
+  background:#F4F4F4;
+  margin-top: 18.39px;
+}
