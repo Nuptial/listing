@@ -27,11 +27,11 @@ export const Listing = () => {
       reqUrlItems = 'https://json-server-project-example.herokuapp.com/items';
     }
 
-    fetch(reqUrlCompanies)
+    fetch(reqUrlCompanies, { mode: 'cors' })
       .then(response => response.json())
       .then(data => dispatch(setCompanies(data)));
 
-    fetch(reqUrlItems)
+    fetch(reqUrlItems, { mode: 'cors' })
       .then(response => response.json())
       .then(data => {
         dispatch(setItems(data));
