@@ -3,13 +3,17 @@
   align-items: center;
   margin-top: 32px;
   max-width: 535px;
-  margin-left: 73px;
+  margin-left: 35px;
 }
 
 .pagination-container .icon {
   color: #1EA4CE;
   width: 24px;
   height: 24px;
+}
+
+.pagination-container .icon:last-child {
+  color: #697488;
 }
 
 .pagination-container .icon:first-child {
@@ -35,7 +39,7 @@
 .pagination-container .next-button-text {
   margin-left: 55px;
   cursor: pointer;
-  color: #1EA4CE;
+  color: #697488;
 }
 
 .pagination-container .icon,
