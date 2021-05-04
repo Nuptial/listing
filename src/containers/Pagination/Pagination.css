@@ -61,3 +61,15 @@
   border-radius: 2px;
   color: white;
 }
+
+.page.not-visible {
+  display: none;
+}
+
+.page.visible {
+  display: inline;
+}
+
+.three-dots {
+  margin: 0 20px;
+}

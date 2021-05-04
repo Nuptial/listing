@@ -15,16 +15,33 @@ const Pagination = () => {
 
   const generatePages = () => {
     return pages.map((page, index) => {
-      if ((index < 4) || (index >= (pages.length - 4))) {
+      if ((page === 4 && activePage >= (pages.length - 4)) ||
+        (page === activePage && activePage > 4 && activePage < pages.length - 4) ||
+        (page === 4 && activePage <= 4)) {
         return (
-          <span
-            onClick={() => dispatch(setActivePage(page))}
-            key={index}
-            className={index + 1 === activePage ? "active page" : "page"}
-          >
-            {page}
-          </span>
+          <>
+            <span
+              onClick={() => dispatch(setActivePage(page))}
+              key={index}
+              className={`
+          ${(index < 4) || (index >= (pages.length - 4)) ? 'visible' : 'not-visible'}
+          ${page === activePage ? "active page visible" : "page"} `}
+            >
+              {page}
+            </span>
+            <span className="three-dots">...</span>
+          </>
         );
+      } else {
+        return (<span
+          onClick={() => dispatch(setActivePage(page))}
+          key={index}
+          className={`
+          ${(index < 4) || (index >= (pages.length - 4)) ? 'visible' : 'not-visible'}
+          ${page === activePage ? "active page visible" : "page"} `}
+        >
+          {page}
+        </span>)
       }
     });
   };
