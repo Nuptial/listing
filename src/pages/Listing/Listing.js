@@ -16,11 +16,22 @@ export const Listing = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    fetch('http://localhost:3004/companies')
+    let reqUrlCompanies = '';
+    let reqUrlItems = '';
+
+    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+      reqUrlCompanies = 'http://localhost:3004/companies';
+      reqUrlItems = 'http://localhost:3004/items';
+    } else {
+      reqUrlCompanies = 'https://json-server-project-example.herokuapp.com/companies';
+      reqUrlItems = 'https://json-server-project-example.herokuapp.com/items';
+    }
+
+    fetch(reqUrlCompanies)
       .then(response => response.json())
       .then(data => dispatch(setCompanies(data)));
 
-    fetch('http://localhost:3004/items')
+    fetch(reqUrlItems)
       .then(response => response.json())
       .then(data => {
         dispatch(setItems(data));
