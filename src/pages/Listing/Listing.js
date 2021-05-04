@@ -19,7 +19,7 @@ export const Listing = () => {
     let reqUrlCompanies = '';
     let reqUrlItems = '';
 
-    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+    if (process.env.NODE_ENV === 'development') {
       reqUrlCompanies = 'http://localhost:3004/companies';
       reqUrlItems = 'http://localhost:3004/items';
     } else {
